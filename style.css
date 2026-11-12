@@ -9,6 +9,7 @@
     --garis : #ddd;
     --la : #f3f5fb;
     --putih : #fff;
+    --form : #f4f6fb;
 }
 
 *{
@@ -129,6 +130,8 @@ body{
 
 .section-alt{
     background: var(--ta);
+    border: 3px var(--teks);
+    border-radius: 25px;
 }
 
 .grid {
@@ -184,6 +187,10 @@ body{
     margin-bottom: 10px;
 }
 
+h2{
+    text-align: center;
+}
+
 /* Class Kontak */
 .contact{
     list-style: none;
@@ -193,6 +200,98 @@ body{
 
 .contact li{
     margin-top: 6px;
+}
+
+/* class form */
+.form-section {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+  background: #f4f6fb;
+}
+
+.form-card {
+  width: 100%;
+  max-width: 520px;
+  background: #ffffff;
+  padding: 36px 32px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(30, 42, 120, 0.12);
+  border-top: 6px solid #ffc107;
+}
+
+.form-title {
+  margin: 0 0 6px;
+  font-size: 26px;
+  color: #1e2a78;
+}
+
+.form-subtitle {
+  margin: 0 0 28px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.form-group input {
+  padding: 12px 14px;
+  font-size: 15px;
+  border: 1.5px solid #d1d5db;
+  border-radius: 10px;
+  background: #f9fafb;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.form-group input::placeholder {
+  color: #9ca3af;
+}
+
+.form-group input:focus {
+  border-color: #1e2a78;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(30, 42, 120, 0.12);
+}
+
+.btn-kirim {
+  width: 100%;
+  padding: 14px;
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e2a78;
+  background: #ffc107;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+}
+
+.btn-kirim:hover {
+  background: #ffca2c;
+  box-shadow: 0 6px 16px rgba(255, 193, 7, 0.4);
+}
+
+.btn-kirim:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 480px) {
+  .form-card {
+    padding: 28px 20px;
+  }
 }
 
 /* class footer */
